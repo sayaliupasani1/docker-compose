@@ -18,7 +18,11 @@ services:
     image: redis:4.0.11-alpine
     networks:
       - mynet
+    volumes:
+      - mydata:/data
 
 networks:
   mynet:
+volumes:
+  mydata:
     
